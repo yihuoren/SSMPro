@@ -1,0 +1,2 @@
+webpackJsonp([2],{a52u:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var a={name:"dashboard",data:function(){return{name:localStorage.getItem("ms_username")}}},r={render:function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("\n    dashboard\n")])},staticRenderFns:[]};var s=n("VU/8")(a,r,!1,function(e){n("pWzW")},"data-v-ec3a3828",null);t.default=s.exports},pWzW:function(e,t){}});
+//# sourceMappingURL=2.4fddee37272ebc2e13c8.js.map
