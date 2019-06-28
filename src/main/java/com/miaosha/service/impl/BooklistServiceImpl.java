@@ -1,13 +1,11 @@
 package com.miaosha.service.impl;
 
 import com.miaosha.dao.BooklistMapper;
-import com.miaosha.model.Booklist;
 import com.miaosha.service.BooklistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by HolSha on 2019/1/21 0021.
@@ -18,7 +16,11 @@ public class BooklistServiceImpl implements BooklistService{
     private BooklistMapper booklistMapper;
 
     @Override
-    public List getList() {
-        return booklistMapper.queryBooklists();
+    public List getList(String title) {
+        return booklistMapper.queryBooklists(title);
+    }
+
+    public List delList(String title) {
+        return booklistMapper.deleteBooklists(title);
     }
 }

@@ -18,5 +18,7 @@ public interface BooklistMapper {
 
     int updateByPrimaryKey(Booklist record);
 
-    List<Booklist> queryBooklists();
+    List<Booklist> queryBooklists(String title);
+
+    List<Booklist> deleteBooklists(String title);
 }

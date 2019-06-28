@@ -92,5 +92,11 @@
         select
         <include refid="Base_Column_List" />
         from booklist
+        where title = #{title,jdbcType=INTEGER}
     </select>
+
+    <delete id="deleteBooklists">
+        delete from booklist
+        where title = #{title,jdbcType=INTEGER}
+    </delete>
 </mapper>
